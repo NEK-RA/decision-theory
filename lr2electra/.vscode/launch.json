@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Electra",
+            "request": "launch",
+            "mainClass": "Electra",
+            "projectName": "lr2electra_abba2078"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Electra",
+            "request": "launch",
+            "mainClass": "Electra",
+            "projectName": "lr2electra_6cc5e51f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Electra",
+            "request": "launch",
+            "mainClass": "Electra",
+            "projectName": "lr2electra_c6098188"
+        }
+    ]
+}
