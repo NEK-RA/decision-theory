@@ -5,6 +5,7 @@
             "name": "CodeLens (Launch) - Electra",
             "request": "launch",
             "mainClass": "Electra",
+<<<<<<< Updated upstream
             "projectName": "lr2electra_abba2078"
         },
         {
@@ -19,6 +20,8 @@
             "name": "CodeLens (Launch) - Electra",
             "request": "launch",
             "mainClass": "Electra",
+=======
+>>>>>>> Stashed changes
             "projectName": "lr2electra_c6098188"
         }
     ]

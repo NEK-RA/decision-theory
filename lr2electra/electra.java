@@ -1,6 +1,7 @@
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
+<<<<<<< Updated upstream
 import java.util.Arrays; 
 
 class Rated{
@@ -20,10 +21,13 @@ class Rated{
         return "<"+this.num+">"+this.name+"("+this.rate+")";
     }
 }
+=======
+>>>>>>> Stashed changes
 
 class Electra{
 
     public static void main(String[] args) {
+<<<<<<< Updated upstream
         //Читаем альтернативы
         ArrayList<Hosting> hostlist = new ArrayList<Hosting>(10);
         fillList(hostlist);
@@ -274,6 +278,35 @@ class Electra{
                 hst.get(i).ewrite();
             }
         }else if(crts!=null){
+=======
+        ArrayList<Hosting> hostlist = new ArrayList<Hosting>(10);
+        System.out.println(hostlist.size());
+        fillList(hostlist);        
+        System.out.println(hostlist.size());
+        ArrayList<Critery> crts = new ArrayList<>();
+        getCriteries(crts);
+        show(null,crts);
+        ArrayList<Host> hosts = new ArrayList<>();
+        buildTable(hostlist,crts,hosts);
+    }
+    
+    static void buildTable(ArrayList<Hosting> hosts, ArrayList<Critery> crts, ArrayList<Host> prepared){
+        
+    }
+
+    static void show(ArrayList<Host> hst,ArrayList<Critery> crts){
+        if(hst!=null){
+            System.out.print("");
+            System.out.print("\t");
+            System.out.print("\t");
+            System.out.print("\t");
+            System.out.println("\t");
+            for(int i = 0;i<hst.size();i++){
+                hst.get(i).write();
+            }
+        }else if(crts!=null){
+            Critery crt;
+>>>>>>> Stashed changes
             System.out.print("Критерий");
             System.out.print("\tВес");
             System.out.print("\t\tШкалы");
@@ -286,6 +319,7 @@ class Electra{
     }
 
     static void getCriteries(ArrayList<Critery> crts){
+<<<<<<< Updated upstream
             
         try{
             File file = new File ("criteries.txt");
@@ -320,6 +354,42 @@ class Electra{
             System.out.println("The file does not exist");
         }
     }
+=======
+        
+    try{
+        File file = new File ("criteries.txt");
+        String str;
+        if(file.exists()) {
+            System.out.println(file.getName() +  " exists!");
+            Scanner fr = new Scanner(file);
+            int line = 1;
+            while(fr.hasNextLine()){
+                str = fr.nextLine();
+                if(str.indexOf("|")!=-1){
+                    try{
+                        crts.add(new Critery(str));
+                    }catch(Exception e){
+                        e.printStackTrace();
+                        System.out.println("String number "+line+" contain incorrect data...Skipped...");
+                        line++;
+                        continue;
+                    }
+                }else{
+                    System.out.println("String number "+line+" is incorrect...Skipped...");
+                    line++;
+                    continue;
+                }
+                line++;
+            }
+        }
+        else {
+            System.out.println("The file does not exist");
+        }
+    }catch(Exception e){
+        System.out.println("The file does not exist");
+    }
+}
+>>>>>>> Stashed changes
     
     static void fillList(ArrayList<Hosting> lst){
         try{

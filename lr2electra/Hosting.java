@@ -1,5 +1,8 @@
 public class Hosting{
+<<<<<<< Updated upstream
 //Поля для обычных значений
+=======
+>>>>>>> Stashed changes
     String id;
     String name;
     int diskSpace;
@@ -8,6 +11,7 @@ public class Hosting{
     double support;
     double downTime;
     double price;
+<<<<<<< Updated upstream
 //Поля для значений по таблице критериев электра
     int eds;
     int ests;
@@ -15,6 +19,8 @@ public class Hosting{
     int espt;
     int edtm;
     int eprc;
+=======
+>>>>>>> Stashed changes
 
     Hosting(int nid, String nm, int dskQt, int sts, double dblim, double dwntm, double spprt, double prc){
         this.id=String.valueOf(nid);
@@ -46,6 +52,7 @@ public class Hosting{
         System.out.print(this.support+"\t\t\t\t\t");
         System.out.println(this.price);
     }
+<<<<<<< Updated upstream
 
     public void ewrite(){
         System.out.print(this.name+"\t\t");
@@ -57,4 +64,6 @@ public class Hosting{
         System.out.println(this.eprc);
     }
 
+=======
+>>>>>>> Stashed changes
 }

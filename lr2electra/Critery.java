@@ -30,6 +30,7 @@ public class Critery{
         result+=arr[arr.length-1];
         return result;
     }
+<<<<<<< Updated upstream
 
     public static int getDScode(int num,Critery crt){
        int code = 0;
@@ -78,4 +79,6 @@ public class Critery{
         if(num>200) code = Integer.parseInt(crt.codes[2]);
         return -1*code;
     }
+=======
+>>>>>>> Stashed changes
 }
